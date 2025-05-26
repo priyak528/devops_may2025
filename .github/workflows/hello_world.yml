@@ -1,0 +1,12 @@
+name: Print Name on Push
+run-name: ${{ github.actor }} is testing on Gitnub actions
+
+on: [push]
+  
+jobs:
+  print_name:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print my name
+        run: echo "Hello, my name is ${{ github.actor }}"
