@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Priya Building the application...'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Priya Running tests...'
+           }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Priya Deploying the application...'
+             }
+        }
+        stage('Complete') {
+            steps {
+                echo 'Hello, World! Deployment complete.'
+            }
+        }
+    }
+
+   }
